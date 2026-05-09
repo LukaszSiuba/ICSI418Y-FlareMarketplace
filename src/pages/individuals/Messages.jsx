@@ -265,8 +265,8 @@ const Messages = () => {
             {status && (
               <div className="messages-status">{status}</div>
             )}
-            <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
-              <aside className="messages-sidebar">
+            <div style={{ display: 'flex', flex: 1, minHeight: 0 }}>
+              <aside className="messages-sidebar" style={{ overflowY: 'auto' }}>
                 <h3 className="messages-sidebar-title">Chats</h3>
                 <div className="messages-sidebar-list">
                   {users.length === 0 && <div className="messages-chat-empty">No users found.</div>}
@@ -285,8 +285,8 @@ const Messages = () => {
                 </div>
               </aside>
 
-              <section className="messages-chat-section">
-                <div className="messages-chat-list">
+              <section style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, background: '#161b22' }}>
+                <div className="messages-chat-list" style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '1.5rem', gap: '0.5rem' }}>
                   {!selectedUser && <div className="messages-chat-empty">Select a user to start chatting.</div>}
                   {selectedUser && messages.map(message => {
                     const parsed = parseMessageContent(message.content);
@@ -396,6 +396,7 @@ const Messages = () => {
                   </form>
                 )}
               </section>
+
             </div>
           </main>
         )}

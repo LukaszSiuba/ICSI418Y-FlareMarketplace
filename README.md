@@ -17,7 +17,7 @@ npm -v
 1. Clone The Repository 
 ```bash
 git clone https://github.com/LukaszSiuba/ICSI418Y-FlareMarketplace.git
-cd cd .\ICSI418Y-FlareMarketplace\
+cd .\ICSI418Y-FlareMarketplace\
 ```
 2. Install the dependencies while inside ICSI418Y-FlareMarketplace :
     ```bash
@@ -54,3 +54,6 @@ For the Support Preview please enter this, a new support redirect in blue will b
 Support Account
 Email: Support@Flare.com
 Password: SupportAccount
+
+### Additional Implementations
+For the forget password implementation under login, make sure to enter your valid email if you use your personal account. Only three emails are allowed per hour.
