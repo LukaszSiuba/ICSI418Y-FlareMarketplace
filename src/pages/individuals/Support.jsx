@@ -541,20 +541,18 @@ export default function Support() {
               </div>
             </form>
           ) : (
-            <DetailErrorBoundary key={selectedTicket?.id ?? "none"}>
-              <TicketDetail
-                ticket={selectedTicket}
-                user={user}
-                profileUserId={profileUserId}
-                setProfileUserId={setProfileUserId}
-                showActionsDropdown={showActionsDropdown}
-                setShowActionsDropdown={setShowActionsDropdown}
-                pendingAction={pendingAction}
-                setPendingAction={setPendingAction}
-                onConfirmAction={confirmAction}
-                navigate={navigate}
-              />
-            </DetailErrorBoundary>
+            <TicketDetail
+              ticket={selectedTicket}
+              user={user}
+              profileUserId={profileUserId}
+              setProfileUserId={setProfileUserId}
+              showActionsDropdown={showActionsDropdown}
+              setShowActionsDropdown={setShowActionsDropdown}
+              pendingAction={pendingAction}
+              setPendingAction={setPendingAction}
+              onConfirmAction={confirmAction}
+              navigate={navigate}
+            />
           )}
         </div>
       </div>
