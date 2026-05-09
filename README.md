@@ -42,9 +42,14 @@ Seller Account
 Email: Seller@Flare.com
 Password: SellerAccount
 
+For the Admin Preview please enter this, a new admin redirect in pink will be in the navbar
+
 Admin Account
 Email: Admin@Flare.com
 Password: AdminAccount
+
+For the Support Preview please enter this, a new support redirect in blue will be in the navbar
+
 
 Support Account
 Email: Support@Flare.com
